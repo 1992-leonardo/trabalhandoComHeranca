@@ -27,7 +27,7 @@ int main() {
     Gerente gerente(nomeGerente, idadeGerente, setor);
     Funcionario funcionario(nomeFuncionario, idadeFuncionario, &gerente, setor);
 
-    std::cout << "\nOlá " << funcionario.getNome() << ". Seja muito bem vindo a LP"
+    std::cout << "\nOlah " << funcionario.getNome() << ". Seja muito bem vindo a LP"
     ", seu gestor é " << funcionario.getGestor()->getNome() << std::endl;
 
     std::cout << "\nInformacoes do Gerente:" << std::endl;
