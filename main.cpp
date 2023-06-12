@@ -24,12 +24,13 @@ int main() {
     std::cout << "Digite o setor: ";
     std::cin >> setor;
 
-    Gerente gerente(nomeGerente, idadeGerente, setor);
+    Gerente gerente(nomeGerente, idadeGerente, "Gerente de Software");
     Funcionario funcionario(nomeFuncionario, idadeFuncionario, &gerente, setor);
 
-    std::cout << "\nOlah " << funcionario.getNome() << ". Seja muito bem vindo a LP"
-    ", seu gestor é " << funcionario.getGestor()->getNome() << std::endl;
-
+    std::cout << "\nOlah " << funcionario.getNome() << ". Seja muito bem vindo a LP Desenvolvimento. " << std::endl;
+    std::cout << "Voce vai fazer parte do time do " << funcionario.getGestor()->getNome() << std::endl;
+    std::cout << "Confira os dados do seu gestor: " << std::endl;
+ 
     std::cout << "\nInformacoes do Gerente:" << std::endl;
     gerente.exibirDados();
 
